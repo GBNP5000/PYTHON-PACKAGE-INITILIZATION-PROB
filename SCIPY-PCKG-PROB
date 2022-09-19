@@ -1,0 +1,53 @@
+pip3 install scipy
+Collecting scipy
+  Using cached scipy-1.9.1.tar.gz (42.0 MB)
+  Installing build dependencies ... error
+  error: subprocess-exited-with-error
+
+  × pip subprocess to install build dependencies did not run successfully.
+  │ exit code: 1
+  ╰─> [34 lines of output]
+      Ignoring numpy: markers 'python_version == "3.8" and platform_machine == "aarch64" and platform_python_implementation != "PyPy"' don't match your environment
+      Ignoring numpy: markers 'python_version == "3.8" and platform_machine == "arm64" and platform_system == "Darwin"' don't match your environment
+      Ignoring numpy: markers 'python_version == "3.9" and platform_machine == "arm64" and platform_system == "Darwin"' don't match your environment
+      Ignoring numpy: markers 'platform_machine == "loongarch64"' don't match your environment
+      Ignoring numpy: markers 'python_version == "3.8" and (platform_machine != "arm64" or platform_system != "Darwin") and platform_machine != "aarch64" and platform_machine != "loongarch64" and platform_python_implementation != "PyPy"' don't match your environment
+      Ignoring numpy: markers 'python_version == "3.9" and (platform_machine != "arm64" or platform_system != "Darwin") and platform_machine != "loongarch64" and platform_python_implementation != "PyPy"' don't match your environment
+      Ignoring numpy: markers 'python_version == "3.11" and platform_python_implementation != "PyPy"' don't match your environment
+      Ignoring numpy: markers 'python_version >= "3.12"' don't match your environment
+      Ignoring numpy: markers 'python_version >= "3.8" and platform_python_implementation == "PyPy"' don't match your environment
+      Collecting meson-python>=0.8.1
+        Using cached meson_python-0.8.1-py3-none-any.whl (17 kB)
+      Collecting meson==0.62.2
+        Using cached meson-0.62.2-py3-none-any.whl (864 kB)
+      Collecting Cython<3.0,>=0.29.21
+        Using cached Cython-0.29.32-py2.py3-none-any.whl (986 kB)
+      Collecting pybind11<2.11.0,>=2.4.3
+        Using cached pybind11-2.10.0-py3-none-any.whl (213 kB)
+      Collecting pythran<0.12.0,>=0.9.12
+        Using cached pythran-0.11.0-py3-none-any.whl (4.2 MB)
+      Collecting wheel<0.38.0
+        Using cached wheel-0.37.1-py2.py3-none-any.whl (35 kB)
+      Collecting numpy==1.22.3
+        Using cached numpy-1.22.3-cp310-cp310-win32.whl (12.2 MB)
+      ERROR: Cannot install numpy==1.21.6 and numpy==1.22.3 because these package versions have conflicting dependencies.
+
+      The conflict is caused by:
+          The user requested numpy==1.22.3
+          The user requested numpy==1.21.6
+
+      To fix this you could try to:
+      1. loosen the range of package versions you've specified
+      2. remove package versions to allow pip attempt to solve the dependency conflict
+
+      ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× pip subprocess to install build dependencies did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
